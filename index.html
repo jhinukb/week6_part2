@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Cali's Coffee</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+      <nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Behind the Scenes</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Gallery</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Reviews</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    </div>
+  </nav>
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <img src="img/coffee.jpg" width="70%" height="70%"></img>
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 font-weight-normal">Cali's Coffee</h1>
+      <p class="lead font-weight-normal">Launch your day with a delicious creamy boost of caffeine with Cali's Coffee!</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">Learn More</button>
+    </div>
+  </div>
+
+
+  <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Flavor Images</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>We brew the tastiest, creamiest frothy coffee! You can find our delicious cups of coffee in 3 different flavors: strawberry, matcha and chocolate.</p>
+
+              <select id="dropdown" onchange="showImage(this.value)">
+                <option disabled value selected>CHOOSE FLAVOR</option>
+                <option value="strawberry">Strawberry</option>
+                <option value="matcha">Matcha</option>
+                <option value="chocolate">Chocolate</option>
+              </select>
+              <br>
+              <img id="img_flavor" height="50%" width="50%">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white ">
+      <img src="img/bean.jpeg" width="70%" height="70%"></img>
+      <div class="my-3 py-3">
+        <h2 class="display-5">High Quality Coffee Beans</h2>
+        <p class="lead">We grind the highest quality coffee beans from Italy.</p>
+      </div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <img src="img/coffeefilter.jpg" width="70%" height="70%"></img>
+      <div class="my-3 p-3">
+        <h2 class="display-5">Fine Coffee Filter</h2>
+        <p class="lead">We use the most fine grain coffee filter with organic compounds.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <img src="img/milk.jpg" width="70%" height="70%"></img>
+      <div class="my-3 p-3">
+        <h2 class="display-5">Steamed Milk</h2>
+        <p class="lead">We use frothy steamed organic milk to make the richest coffee.</p>
+      </div>
+    </div>
+    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <img src="img/coffeemaker.jpg" width="70%" height="70%"></img>
+      <div class="my-3 py-3">
+        <h2 class="display-5">Fastest Coffee Maker</h2>
+        <p class="lead">We sell coffee makers so you can make it yourself in less than 5 minutes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <img src="img/kcup.jpg" width="70%" height="70%"></img>
+      <div class="my-3 p-3">
+        <h2 class="display-5">K-Cup Pods</h2>
+        <p class="lead">Our product is suitable for k-cup pods for a quick cup of coffee.</p>
+      </div>
+    </div>
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <img src="img/matcha.jpg" width="70%" height="50%"></img>
+      <div class="my-3 py-3">
+        <h2 class="display-5">Matcha Latte Special</h2>
+        <p class="lead">We also serve our special healthy matcha latte drink!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg> -->
+        <small class="d-block mb-3 text-muted">&copy; November 2020</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Product</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Beverages</a></li>
+          <li><a class="text-muted" href="#">Specials</a></li>
+          <li><a class="text-muted" href="#">Add-ons</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Business</a></li>
+          <li><a class="text-muted" href="#">Pricing</a></li>
+          <li><a class="text-muted" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
+<script src="js/scripts.js"></script>
+</body>
+
+</html>
